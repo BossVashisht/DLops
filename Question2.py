@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define the random values
-randomValues = np.array([-3.5, -1.2, 0, 2.8, -4.1, 1.5, -0.7, 3.2, -2.4, 4.6])
+randomValues = np.array([-1.5, -2, 1, 1.8, -2.1, 2.5, -1.7, 1.2, -1.4, 1.6])
 
 # Sigmoid activation function
 def sigmoid(x):
