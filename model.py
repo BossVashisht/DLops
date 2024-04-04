@@ -87,7 +87,7 @@ def evaluate_model(model, test_loader):
 # Initialize the CNN model, loss function, and optimizer
 cnn_model = CNN()
 criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(cnn_model.parameters(), lr=0.001)
+optimizer = optim.Adam(cnn_model.parameters(), lr=0.01)
 
 # Train the CNN model
 train_model(cnn_model, train_loader, criterion, optimizer)
@@ -103,7 +103,7 @@ cnn_conf_matrix = confusion_matrix(true_labels, cnn_predictions)
 
 # Initialize the MLP model, loss function, and optimizer
 mlp_model = MLP()
-optimizer = optim.Adam(mlp_model.parameters(), lr=0.001)
+optimizer = optim.Adam(mlp_model.parameters(), lr=0.01)
 
 # Train the MLP model
 train_model(mlp_model, train_loader, criterion, optimizer)
